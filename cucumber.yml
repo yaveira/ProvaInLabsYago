@@ -1,0 +1,17 @@
+#execução padrão para validação da compra com sucesso
+default_comprar: -p html_report -t @comprar
+
+#execução padrão para validação do carrinho de compras
+default_cart: -p json_report -t @cart
+
+#execução completa + relatorio em HTML
+default_completa_html: -p html_report
+
+#execução completa + relatorio em JSON
+default_completa_json: -p json_report
+
+#execução para gerar status report em HTML
+html_report: --format progress --format html --out=features_report.html
+
+#execução para gerar status report em JSON
+json_report: --format progress --format json --out=features_report.json
