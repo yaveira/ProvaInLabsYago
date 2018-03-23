@@ -1,4 +1,4 @@
-class Validar < SitePrism::Page
+class ValidarValorFinal < SitePrism::Page
 
     element :value_total, :xpath, '//*[@id="post-30"]/div/div[2]/p[3]'
 

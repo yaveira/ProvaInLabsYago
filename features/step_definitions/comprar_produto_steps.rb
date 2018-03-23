@@ -1,8 +1,8 @@
-Dado("que eu esteja logado") do
+Dado("que eu esteja logado no OnlineStore") do
     @logar = Login.new
     @buscar = Buscar.new
     @comprar = Comprar.new
-    @validar = Validar.new
+    @validar = ValidarValorFinal.new
     
     @logar.load
     @logar.logar 'yagooliv', 'teste@teste'
